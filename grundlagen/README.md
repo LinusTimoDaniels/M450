@@ -1,7 +1,4 @@
 ## Aufgabe 1
-Welche Formen von Tests kennen Sie aus der Informatik?  
-Arbeiten Sie zu zweit und erläutern Sie mind. drei Beispiele, die Sie aus der Praxis kennen.  
-Wie werden die Tests durchgeführt?
 
 - **Unittests**
 - **End-to-End-Tests**
@@ -13,8 +10,6 @@ Wie werden die Tests durchgeführt?
 ---
 
 ## Aufgabe 2
-Nennen Sie ein Beispiel eines Software-Fehlers und eines Software-Mangels.  
-Nennen Sie ein Beispiel für einen hohen Schaden bei einem Software-Fehler.
 
 **Ein Software-Fehler** wäre ein Programmabsturz, der durch einen falschen Code verursacht wird, wie ein Rechenfehler in einer App.  
 **Ein Software-Mangel** hingegen liegt vor, wenn die Software eine wichtige, versprochene Funktion, wie z. B. eine Export-Funktion, nicht enthält.
@@ -24,46 +19,8 @@ Ein Beispiel für **hohen Schaden durch einen Software-Fehler** wäre ein Fehler
 ---
 
 ## Aufgabe 3
-Eine Software gliedert sich in der Regel in eine Reihe von Teilsystemen, die wiederum aus einer Vielzahl elementarer Komponenten besteht.  
-Wir haben im V-Modell gesehen, dass es verschiedene Teststufen gibt. Wir wollen in diesem Zusammenhang nun ein Beispiel der untersten Stufe anschauen.
 
-### Beispiel: Test in der Klasse `Preisberechnung`
-In der Auto-Verkauf-Software werden Preise mit Rabatten versehen.  
-Wir haben folgende Elemente und Regeln:
-- Es besteht ein Grundpreis (`baseprice`), abzüglich Händlerrabatt (`discount`).
-- Dazu kommen Sondermodellaufschlag (`specialprice`) und der Preis für weitere Zusatzausstattungen (`extraprice`).
-- Wenn drei oder mehr Zusatzausstattungen (`extras`) ausgewählt werden, erfolgt ein Rabatt von 10% auf diesen Ausstattungen.
-- Wenn es fünf oder mehr Zusatzausstattungen sind, beträgt der Rabatt 15%.
-
-**Wichtige Hinweise:**
-- Der Händlerrabatt bezieht sich auf den Grundpreis.
-- Der Zubehörrabatt gilt nur für den Preis der Zubehörteile.
-
-Ein Code könnte so aussehen:
-
-```java
-double calculatePrice(double baseprice, double specialprice, double extraprice, int extras, double discount) {
-    double addon_discount;
-    double result;
-    
-    if (extras >= 3) 
-        addon_discount = 10;
-    else if (extras >= 5)
-        addon_discount = 15;
-    else 
-        addon_discount = 0;
-    
-    if (discount > addon_discount)
-        addon_discount = discount;
-    
-    result = baseprice / 100.0 * (100 - discount) + specialprice
-            + extraprice / 100.0 * (100 - addon_discount);
-    
-    return result;
-}
-```
-
-### Lösungsvorschlag
+### Angepasster Code
 
 ```java
 public class PreisBerechnung {
