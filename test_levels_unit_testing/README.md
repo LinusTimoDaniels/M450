@@ -274,7 +274,11 @@ class AdditionTests {
 
 ## Aufgabe 3
 
+Tests mit Code Coverage laufen lassen:
+
 ![run-tests-with-codecoverage](run-tests-with-codecoverage.png)
+
+Code Coverage Ergebnis:
 
 ![code-coverage](code-coverage.png)
 
