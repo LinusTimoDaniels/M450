@@ -1,5 +1,3 @@
 # Abhängigkeiten zu Schnittstellen
 
-## Aufgabe 1
-
-## Aufgabe 2
+![codeCoverage-AdressBook_Backend](codeCoverage-AdressBook_Backend.png)
