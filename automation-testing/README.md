@@ -77,3 +77,7 @@ Angular Application starten
 Test laufen lassen
 
 `npm run e2e`
+
+Ergebnis:
+
+![ergebnis](ergebnis.png)
