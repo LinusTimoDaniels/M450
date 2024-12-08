@@ -81,3 +81,19 @@ Test laufen lassen
 Ergebnis:
 
 ![ergebnis](ergebnis.png)
+
+## Aufgabe 3
+
+In Postman bei der Collection oben rechts auf "Run" klicken
+
+![collection.png](collection.png)
+
+Dann auf den "Performance" Tab wechseln & 100 Virtual Users eintragen (mehr get nicht), dieser Test lassen wir hier für 1 Minute laufen. Man könnte auch längere Zeiten einstellen und ein anderes Load Profile wählen.
+
+Schlussendlich auf "Run" klicken, um den Test zu starten.
+
+![performance.png](performance.png)
+
+Das Resultat sieht dann ungefähr so aus:
+
+![belastungstest.png](belastungstest.png)
