@@ -16,7 +16,7 @@ Resultat in der Konsole:
 
 ![result](result.png)
 
-In Postman können die Tests auch automatisiert ausgeführt werden.
+In Postman können die Tests auch regelmässig, zeitgeplant ausgeführt werden wie z.Bsp. jeden Tag um 3 Uhr morgens.
 
 ## Aufgabe 2
 
